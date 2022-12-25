@@ -1,0 +1,128 @@
+:root{
+    --azul-fondo: #181D31;
+    --crema: #E6DDC4;
+    --sombra-verde: #678983;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--azul-fondo);
+    font-family: sans-serif;
+}
+
+header{
+    height: 5.2rem;
+    padding: 0.5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    height: 50px;
+}
+
+.header_linkcontainer{
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_links{
+    text-decoration: none;
+    font-size: 16px;
+    background-color: var(--crema);
+    padding: 10px;
+    color: var(--azul-fondo);
+    border-radius: 12px;
+    box-shadow: 3px 3px var(--sombra-verde);
+}
+
+.index_portada{
+    background-image: url("../imagenes/codigo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index_titulo{
+    color: #EEEEEE;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px #808080, 5px 7px black;
+}
+
+.index_subtitulo{
+    text-align: center;
+    color: var(--sombra-verde);
+    font-size: 2.5rem;
+}
+
+.index_contenido{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.index_carta{
+   background-color: var(--crema);
+   width: 19%;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   align-items: center;
+   border: 5px solid var(--sombra-verde);
+}
+
+.index_carta-imagen{
+    max-width: 100%;
+}
+
+.index_carta-link{
+    text-decoration: none;
+    color: #EEEEEE;
+    background-color: var(--azul-fondo);
+    padding: 0.7rem 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 2px 3px var(--sombra-verde);
+}
+
+
+footer{
+    margin-top: 200px;
+    height: 180px;
+    background-color: var(--sombra-verde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    color: var(--azul-fondo);
+}
+
+.footer_mitad{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_logo{
+    height: 80px;
+}
+
+.footer_titulo{
+    font-size: 14px;
+    max-width: 60px;
+    text-align: center;
+}
