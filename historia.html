@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./imagenes/logo.png" alt="logo" class="header_logo"></a>
-        <div class="header_linkcontainer">
+    <header class="flex-between">
+        <a href="./index.html"><svg width="200" height="80">
+            <rect class="primero" x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
+            <rect class="segundo" x="50" y="10" width="50" height="25" rx="5" fill="#495579"></rect>
+            <polygon class="primero" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2"></polygon>
+            <polygon class="segundo" points="57 48 ,92 48,104 58,43 58" fill="#495579"></polygon>
+        </svg></a>
+        <div class="header_linkcontainer flex-between">
             <a class="header_links botonclick" href="./historia.html">HISTORIA</a>
             <a class="header_links botonclick" href="./juego.html">JUGUEMOS</a>
         </div>
@@ -45,17 +50,17 @@
     <h2 class="historia_h2 historia_h2-video">Un breve video para complementar lo visto</h2>
     <div class="historia_video">
         <video id="video" src="./videos/historia-Comp.mp4" poster="./imagenes/img-video.jpg"></video>
-        <div class="historia_video-controles">
+        <div class="historia_video-controles flex-between">
             <div>
                 <button class="historia_botones botonclick" id="play"><img src="./imagenes/play.svg" alt="play"></button>
                 <button class="historia_botones botonclick" id="pausa"><img src="./imagenes/pausa.svg" alt="pausa"></button>
             </div>
-            <p>Duracion video: 281.10</p>
+            <p>Duracion video: <span id="duracion">281.10</span></p>
         </div>
     </div>
 
-    <footer>
-        <div class="footer_mitad">
+    <footer class="flex-between">
+        <div class="footer_mitad flex-between">
             <img class="footer_logo" src="./imagenes/logo.png" alt="logo">
             <h4 class="footer_titulo">PROGRAMACION E HISTORIA</h4>
         </div>

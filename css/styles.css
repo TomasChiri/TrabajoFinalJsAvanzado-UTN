@@ -16,11 +16,14 @@ body{
     font-family: sans-serif;
 }
 
-header{
-    height: 5.2rem;
-    padding: 0.5rem 5rem;
+.flex-between{
     display: flex;
     justify-content: space-between;
+}
+
+header{
+    height: 5.2rem;
+    padding: 0.5rem 4rem;
     align-items: center;
 }
 
@@ -30,8 +33,15 @@ header{
 
 .header_linkcontainer{
     width: 14%;
-    display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+}
+
+.primero{
+    animation: animacionPrimero ease-in 1s;
+}
+
+.segundo{
+    animation: animacionSegundo ease-in 1s;
 }
 
 .header_links{
@@ -49,10 +59,41 @@ header{
     transform: translate(2px, 2px);
 }
 
+@keyframes animacionPrimero{
+    0% {
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    40%{
+        transform: translate(0,0);
+        opacity: 1;
+    }   
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes animacionSegundo{
+    0% {
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    70%{
+        transform: translate(0,0);
+        opacity: 1;
+    }   
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
 .index_portada{
     background-image: url("../imagenes/codigo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -82,9 +123,7 @@ header{
    background-color: var(--crema);
    width: 19%;
    height: 410px;
-   display: flex;
    flex-direction: column;
-   justify-content: space-between; 
    align-items: center;
    border: 5px solid var(--sombra-verde);
 }
@@ -149,8 +188,6 @@ video{
 
 .historia_video-controles{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     background-color: #1D1D1D;
     padding: 5px 10px 5px;
@@ -172,12 +209,60 @@ video{
     margin-right: 5px;
 }
 
+.juego_h2{
+    margin-top: 100px;
+}
+
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juego_cajas{
+    display: flex;
+}
+
+.juego_caja{
+    height: 400px;
+    width: 280px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.juego_caja p{
+    color: var(--crema);
+}
+
+.juego_caja:hover{
+    background-color: #1D1D1D;
+}
+
+.juego_imagenes{
+    display: flex;
+    gap: 1rem;
+    margin: 2.5rem;
+}
+
+.juego_imagen{
+    height: 400px;
+    width: 280px;
+}
+
+.juego_boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
 footer{
     margin-top: 200px;
     height: 180px;
     background-color: var(--sombra-verde);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
     color: var(--azul-fondo);
@@ -185,9 +270,7 @@ footer{
 
 .footer_mitad{
     width: 15%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .footer_logo{
